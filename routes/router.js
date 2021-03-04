@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const database = include('databaseConnection');
-// const dbModel = include('databaseAccessLayer');
-const dbModel = include('staticData');
+const dbModel = include('databaseAccessLayer');
+//const dbModel = include('staticData');
 
 router.get('/', (req, res) => {
 	console.log("page hit");
@@ -13,14 +13,14 @@ router.get('/', (req, res) => {
 		}
 		else {
 			
-			dbModel.getAllTodos((err, result) => {
+			dbModel.getAllUsers((err, result) => {
 				if (err) {
 					res.render('error', {message: 'Error reading from MySQL'});
 					console.log("Error reading from mysql");
 					console.log(err);
 				}
 				else { //success
-					res.render('index', {allTodos: result});
+					res.render('index', {AllUsers: result});
 
 					//Output the results of the query to the Heroku Logs
 					console.log(result);

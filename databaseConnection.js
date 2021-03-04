@@ -12,11 +12,11 @@ const dbConfigHeroku = {
 };
 
 const dbConfigLocal = {
-	host: "127.0.0.1",
+	host: "localhost",
 	user: "root",
-	password: "qkrwoqja1",
-	multipleStatements: false,
-	reconnect: true
+	password: "Password",
+	database: "lab_example",
+	multipleStatements: false
 };
 
 if (is_heroku) {

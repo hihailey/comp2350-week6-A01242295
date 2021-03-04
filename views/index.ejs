@@ -17,15 +17,17 @@
 						<table class="table is-bordered is-hoverable is-striped is-narrow">
 							<thead>
 							<tr>
-								<th> # </th>
-								<th> users </th>
+								<th> First Name </th>
+								<th> Last Name </th>
+								<th> Email </th>
 							</tr>
 							</thead>
 							<% let i=0; %>
 							<% for(i=0; i < allUsers.length; i++) { %>
 							<tr>
-								<td><%= allUsers[i].todo_id %></td>
-								<td><%= allUsers[i].todo_name %></td>
+								<td><%= allUsers[i].first_name %></td>
+								<td><%= allUsers[i].last_name %></td>
+								<td><%= allUsers[i].email %></td>
 							</tr>
 							<% } %>
 							<tfoot>

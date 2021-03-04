@@ -10,7 +10,7 @@
 			<div class="maincolumns columns is-desktop is-vcentered">
 				<div class="column is-10 is-offset-1 notification is-info is-light box container">
 					<div class="title">
-						To do list
+						Web users
 					</div>
 					<% if (locals.allUsers) { %>
 						<div class="table-container">
@@ -18,15 +18,14 @@
 							<thead>
 							<tr>
 								<th> # </th>
-								<th> Todo </th>
+								<th> users </th>
 							</tr>
 							</thead>
 							<% let i=0; %>
 							<% for(i=0; i < allUsers.length; i++) { %>
 							<tr>
-								<td><%= allUsers[i].first_name %></td>
-								<td><%= allUsers[i].last_name %></td>
-								<td><%= allUsers[i].email %></td>
+								<td><%= allUsers[i].todo_id %></td>
+								<td><%= allUsers[i].todo_name %></td>
 							</tr>
 							<% } %>
 							<tfoot>

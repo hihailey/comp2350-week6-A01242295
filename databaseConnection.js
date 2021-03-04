@@ -15,8 +15,8 @@ const dbConfigLocal = {
 	host: "127.0.0.1",
 	user: "root",
 	password: "qkrwoqja1",
-	database: "lab_example",
-	multipleStatements: false
+	multipleStatements: false,
+	reconnect: true
 };
 
 if (is_heroku) {

@@ -12,7 +12,7 @@ const dbConfigHeroku = {
 };
 
 const dbConfigLocal = {
-	host: "localhost",
+	host: "127.0.0.1",
 	user: "root",
 	password: "qkrwoqja1",
 	database: "lab_example",
